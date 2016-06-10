@@ -23,6 +23,7 @@ WORKDIR /ngx_mruby
 
 ENV BUILD_DYNAMIC_MODULE true
 RUN sh build.sh && make install
+RUN install -o nobody -g nobody -d /var/log/nginx
 
 # Configurations to reproduce
 ADD config/nginx.conf /ngx_mruby/ngx_mruby/build_dynamic/nginx/conf/nginx.conf
