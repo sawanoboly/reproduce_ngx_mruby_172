@@ -27,6 +27,7 @@ RUN sh build.sh && make install
 # Configurations to reproduce
 ADD config/nginx.conf /ngx_mruby/ngx_mruby/build_dynamic/nginx/conf/nginx.conf
 ADD html/index.php /ngx_mruby/ngx_mruby/build_dynamic/nginx/html/index.php
+ADD html/index.html /ngx_mruby/ngx_mruby/build_dynamic/nginx/html/index.html
 
 ADD entry.sh /entry.sh
 EXPOSE 8080
