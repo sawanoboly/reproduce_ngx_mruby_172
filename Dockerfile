@@ -3,7 +3,7 @@ MAINTAINER sawanoboriyu@higanworks.com
 
 RUN apk add --update openssl-dev git curl geoip-dev file wget bash tar \
   && apk add --virtual build-deps build-base ruby-rake bison perl pcre-dev \
-  && apk add --virtual reproduce php-fpm vim
+  && apk add --virtual reproduce php-fpm vim gdb
 #   && curl -L https://github.com/cubicdaiya/nginx-build/releases/download/v$NGINX_BUILD/nginx-build-linux-amd64-$NGINX_BUILD.tar.gz -o nginx-build.tar.gz \
 #   && tar xvzf nginx-build.tar.gz \
 #   && ./nginx-build -verbose -v $NGINX_VER -d work -pcre -zlib -m /config/modules3rd.ini -c /config/configure.sh --clear \
